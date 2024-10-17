@@ -1,0 +1,29 @@
+:host {
+  height: inherit;
+  display: grid;
+  place-content: center center;
+
+  .examples {
+    display: flex;
+    gap: 1rem;
+
+    mat-card {
+      min-height: 20rem;
+      min-width: 30rem;
+      background: inherit;
+
+      .checkbox-group {
+        display: flex;
+        flex-flow: column wrap;
+
+        .label {
+          color: rgba($color: #000000, $alpha: 0.56);
+        }
+      }
+
+      mat-form-field {
+        width: 100%;
+      }
+    }
+  }
+}
